@@ -1,0 +1,6 @@
+<Modules>
+  <Module PersistentId="9754E6A8-FCA3-4DF2-9586-4AC1C4915ACC" ModuleId="ReceiptStorage" />
+  <Module PersistentId="31FDBFD7-6F93-4D3C-8C1A-58D87E915EC5" ModuleId="QuickChartsWP" />
+  <Module PersistentId="888AF97D-C3AD-4EC2-A010-89910B3B5AA3" ModuleId="OcrClientLibrary" />
+  <Module PersistentId="AC93C88D-4A95-48CD-BA6E-146A03AFEA53" ModuleId="ClientLibraryBase" />
+</Modules>

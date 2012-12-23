@@ -1,0 +1,45 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:amq="clr-namespace:AmCharts.Windows.QuickCharts"
+    >
+    <Style TargetType="amq:PieChart">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="amq:PieChart">
+                    <Border Background="{TemplateBinding Background}"
+                            BorderBrush="{TemplateBinding BorderBrush}"
+                            BorderThickness="{TemplateBinding BorderThickness}"
+                            Padding="{TemplateBinding Padding}"
+                            >
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition />
+                                <ColumnDefinition Width="Auto"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Border x:Name="PART_SliceCanvasDecorator" Background="Transparent" Grid.Column="0" >
+                                <Canvas x:Name="PART_SliceCanvas" HorizontalAlignment="Stretch" />
+                            </Border>
+
+                            <amq:Legend x:Name="PART_Legend" HorizontalAlignment="Stretch" VerticalAlignment="Center" Grid.Column="1"
+                                        Margin="10,0,0,0" 
+                                        Visibility="{TemplateBinding LegendVisibility}"
+                                        
+                                        />
+
+                            <Canvas>
+                                <amq:Balloon x:Name="PART_Balloon" 
+                                             BorderBrush="{TemplateBinding Foreground}" 
+                                             BorderThickness="2"
+                                             Visibility="Collapsed"
+                                             />
+                            </Canvas>
+
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

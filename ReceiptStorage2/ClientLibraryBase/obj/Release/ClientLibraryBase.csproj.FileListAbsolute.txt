@@ -1,0 +1,5 @@
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\ClientLibraryBase\Bin\Release\ClientLibraryBase.dll
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\ClientLibraryBase\Bin\Release\ClientLibraryBase.pdb
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\ClientLibraryBase\obj\Release\ResolveAssemblyReference.cache
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\ClientLibraryBase\obj\Release\ClientLibraryBase.dll
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\ClientLibraryBase\obj\Release\ClientLibraryBase.pdb

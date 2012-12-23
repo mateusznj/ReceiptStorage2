@@ -1,0 +1,203 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>OcrClientLibrary</name>
+    </assembly>
+    <members>
+        <member name="T:Hawaii.Services.Client.Ocr.OcrAgent">
+            <summary>
+            This class provides helper methods used to communicate with the Hawaii OCR Service.
+            for character recognition. This class accepts an image buffer as an input, sends it to the 
+            OCR service and receives the result of the OCR processing.
+            </summary>
+        </member>
+        <member name="M:Hawaii.Services.Client.Ocr.OcrAgent.#ctor(System.String,System.String,System.Byte[],System.Object)">
+            <summary>
+            Initializes a new instance of the OcrAgent class.
+            </summary>
+            <param name="hostName">Specifies the host name of the OCR service.</param>
+            <param name="hawaiiAppId">Specifies the Hawaii Application Id.</param>
+            <param name="imageBuffer">
+            Specifies a buffer containing an image that has to be processed.
+            The image must be in JPEG format.
+            </param>
+            <param name="stateObject">Specifies a user defined object which will be provided in the call to the "on complete" calback.</param>
+        </member>
+        <member name="M:Hawaii.Services.Client.Ocr.OcrAgent.GetPostData">
+            <summary>
+            An overridden abstract method. It provides the POST (as in Http POST) data that has to be sent to the service.
+            This method will be called by the base class when it needs data during a Http POST method call.
+            </summary>
+            <returns>
+            The POST data as an array of bytes.
+            </returns>
+        </member>
+        <member name="M:Hawaii.Services.Client.Ocr.OcrAgent.ParseOutput(System.IO.Stream)">
+            <summary>
+            An overridden abstract method. This method is called after the response sent by the server is received by the client.
+            </summary>
+            <param name="responseStream">
+            The response stream containing response data that is received from the server.
+            </param>
+        </member>
+        <member name="M:Hawaii.Services.Client.Ocr.OcrAgent.OnCompleteRequest">
+            <summary>
+            An overriden method. 
+            It is invoked after completing the service request. It does some processing of the OCR service call result 
+            and it calls the client's "on complete" callback method.
+            </summary>
+        </member>
+        <member name="M:Hawaii.Services.Client.Ocr.OcrAgent.CreateServiceUri(System.String)">
+            <summary>
+            It creates the service uri.
+            </summary>
+            <param name="hostName">Specifies a host name of the service.</param>
+            <returns>A valid service uri object.</returns>
+        </member>
+        <member name="P:Hawaii.Services.Client.Ocr.OcrAgent.ImageBuffer">
+            <summary>
+            Gets the buffer containing the image that has to be processed.
+            </summary>
+        </member>
+        <member name="T:Hawaii.Services.Client.Ocr.OcrServiceResult">
+            <summary>
+            This class represents the result of the OCR processing.
+            </summary>
+        </member>
+        <member name="P:Hawaii.Services.Client.Ocr.OcrServiceResult.OcrResult">
+            <summary>
+            Gets the result of the OCR processing.
+            </summary>
+        </member>
+        <member name="T:Hawaii.Services.Client.Ocr.OcrText">
+            <summary>
+            Contains one text item that is obtained after a Hawaii OCR call.
+            </summary>
+        </member>
+        <member name="M:Hawaii.Services.Client.Ocr.OcrText.#ctor">
+            <summary>
+            Initializes a new instance of the OcrText class.
+            </summary>
+        </member>
+        <member name="P:Hawaii.Services.Client.Ocr.OcrText.Orientation">
+            <summary>
+            Gets or sets the orientation of the text.
+            </summary>
+        </member>
+        <member name="P:Hawaii.Services.Client.Ocr.OcrText.Skew">
+            <summary>
+            Gets or sets the skewness of the text.
+            </summary>
+        </member>
+        <member name="P:Hawaii.Services.Client.Ocr.OcrText.Words">
+            <summary>
+            Gets or sets the list of words that are contained in the text.
+            </summary>
+        </member>
+        <member name="P:Hawaii.Services.Client.Ocr.OcrText.Text">
+            <summary>
+            Gets the text of all the words (this.Words) separated by 
+            space and combined in a single string.
+            </summary>
+        </member>
+        <member name="T:Hawaii.Services.Client.Ocr.OcrWord">
+            <summary>
+            Contains one word item that is obtained after a Hawaii OCR call.
+            </summary>
+        </member>
+        <member name="M:Hawaii.Services.Client.Ocr.OcrWord.#ctor">
+            <summary>
+            Initializes a new instance of the OcrWord class.
+            </summary>
+        </member>
+        <member name="M:Hawaii.Services.Client.Ocr.OcrWord.ToString">
+            <summary>
+            Returns a System.String that represents this OcrWord instance.
+            </summary>
+            <returns>
+            A System.String that represents this OcrWord instance.
+            </returns>
+        </member>
+        <member name="P:Hawaii.Services.Client.Ocr.OcrWord.Text">
+            <summary>
+            Gets or sets the text of the word.
+            </summary>
+        </member>
+        <member name="P:Hawaii.Services.Client.Ocr.OcrWord.Confidence">
+            <summary>
+            Gets or sets the confidence of the word.
+            </summary>
+        </member>
+        <member name="P:Hawaii.Services.Client.Ocr.OcrWord.Box">
+            <summary>
+            Gets or sets the bounding box of the word in a string format.
+            The box is described as X0,Y0,Width,Height. 
+            X0,Y0 are the coordinates of the top left corner of the word relative to the top left corner of the image.
+            </summary>
+        </member>
+        <member name="T:Hawaii.Services.Client.Ocr.OcrResult">
+            <summary>
+            This class describes the result obtained after a Hawaii OCR call.
+            </summary>
+        </member>
+        <member name="M:Hawaii.Services.Client.Ocr.OcrResult.#ctor">
+            <summary>
+            Initializes a new instance of the OcrResult class.
+            </summary>
+        </member>
+        <member name="P:Hawaii.Services.Client.Ocr.OcrResult.InternalErrorMessage">
+            <summary>
+            Gets or sets the error message if an error occures during the OCR process.
+            </summary>
+        </member>
+        <member name="P:Hawaii.Services.Client.Ocr.OcrResult.OcrTexts">
+            <summary>
+            Gets or sets OcrTexts items.
+            </summary>
+        </member>
+        <member name="T:Hawaii.Services.Client.Ocr.NamespaceDoc">
+            <summary>
+            The Hawaii.Services.Client.Ocr namespace provides classes that implement the client library 
+            that connects to the Hawaii OCR Service in order to perform character recognition.
+            </summary>
+        </member>
+        <member name="T:Hawaii.Services.Client.Ocr.OcrService">
+            <summary>
+            Helper class that provides access to the OCR service.
+            </summary>
+        </member>
+        <member name="F:Hawaii.Services.Client.Ocr.OcrService.HostName">
+            <summary>
+            Specifies the service host name. This will be used to create the service url.
+            </summary>
+        </member>
+        <member name="F:Hawaii.Services.Client.Ocr.OcrService.ServiceSignature">
+            <summary>
+            Specifies a signature for the REST method that executes the OCR processing.
+            </summary>
+        </member>
+        <member name="M:Hawaii.Services.Client.Ocr.OcrService.RecognizeImageAsync(System.String,System.Byte[],Hawaii.Services.Client.ServiceAgent{Hawaii.Services.Client.Ocr.OcrServiceResult}.OnCompleteDelegate)">
+            <summary>
+            Helper method to initiate the call to the Hawaii OCR service.
+            </summary>
+            <param name="hawaiiAppId">Specifies the Hawaii Application Id.</param>
+            <param name="imageBuffer">
+            Specifies a buffer containing an image that has to be processed.
+            The image must be in JPEG format.
+            </param>
+            <param name="onComplete">Specifies an on complete callback method.</param>
+        </member>
+        <member name="M:Hawaii.Services.Client.Ocr.OcrService.RecognizeImageAsync(System.String,System.Byte[],Hawaii.Services.Client.ServiceAgent{Hawaii.Services.Client.Ocr.OcrServiceResult}.OnCompleteDelegate,System.Object)">
+            <summary>
+            Helper method to recognize an image.
+            </summary>
+            <param name="hawaiiAppId">Specifies the Hawaii Application Id.</param>
+            <param name="imageBuffer">
+            Specifies a buffer containing an image that has to be processed.
+            The image must be in JPEG format.
+            </param>
+            <param name="onComplete">Specifies an on complete callback method.</param>
+            <param name="stateObject">Specifies a user defined object which will be provided in the call of the callback method.</param>
+        </member>
+    </members>
+</doc>

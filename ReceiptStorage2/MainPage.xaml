@@ -1,0 +1,201 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="ReceiptStorage.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:controls="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:ReceiptStorage.Extensions"
+    xmlns:amq="clr-namespace:AmCharts.Windows.QuickCharts;assembly=AmCharts.Windows.QuickCharts.WP"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"
+    xmlns:ReceiptStorage="clr-namespace:ReceiptStorage"
+    mc:Ignorable="d" d:DataContext="{d:DesignData }"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait"  Orientation="Portrait"
+    shell:SystemTray.IsVisible="False" d:DesignHeight="728" d:DesignWidth="480">
+    <UserControl.Resources>
+        <local:ImageConverter x:Key="ImageConverter"/>
+        <local:ThemedImageConverterHelper x:Key="ThemedImageConverterHelper" />
+
+    </UserControl.Resources>
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <!--Panorama control-->
+        <controls:Panorama Title="ReceiptStorage" Background="{StaticResource PhoneBackgroundBrush}" IsTabStop="False">
+            <!--Panorama item one-->
+            <controls:PanoramaItem Header="dashboard">
+                <!--Double line list with text wrapping-->
+                
+                    
+                        <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="auto"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <toolkit:PhoneTextBox Hint="Search"
+                                          x:Name="tbFilter"
+                                          ActionIcon="/Content/Images/dark/search_wc.png"
+                                          ActionIconTapped="Search_ActionIconTapped" 
+                                          Visibility="Collapsed"/>
+                        
+                       <ListBox Margin="0,0,-12,0" 
+                             Name="lbReceipt" 
+                             SelectionChanged="Receipt_SelectionChanged" Grid.Row="1"
+                         Height="400">
+                            <ListBox.ItemTemplate>
+                                <DataTemplate>
+                                    <ReceiptStorage:ucDashboard/>
+                                </DataTemplate>
+                            </ListBox.ItemTemplate>
+                        </ListBox>
+                        </Grid>
+
+                
+                    
+            </controls:PanoramaItem>
+ 
+            <!--Panorama item two-->
+            <controls:PanoramaItem Header="wykres">
+                <ScrollViewer Grid.Row="1">
+                    <StackPanel Grid.Row="1">
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Width="432">
+                            <TextBlock Name="tblLastWeek" Text="Wykres wydatków z ostatniego tygodnia:" Margin="0,0,0,0" />
+                            <amq:SerialChart Margin="0,3,0,8"
+                                     x:Name="receiptWeeksChart" 
+                                     CategoryValueMemberPath="ReceiptDate"
+                                     AxisForeground="{StaticResource PhoneForegroundBrush}"
+                                     GridStroke="DarkGray"
+                                     FontSize="21.333" 
+                                     LegendVisibility="Collapsed"
+                                     PlotAreaBackground="{x:Null}" 
+                                     Foreground="{StaticResource PhoneForegroundBrush}" Height="367" Width="420">
+                                <amq:SerialChart.Graphs>
+                                    <amq:ColumnGraph  ValueMemberPath="ReceiptSum" 
+                                                      HorizontalAlignment="Left" 
+                                                      Title="Wydatki dnia" 
+                                                      Brush="{StaticResource PhoneAccentBrush}"/>
+                                </amq:SerialChart.Graphs>
+                            </amq:SerialChart>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Width="432">
+                            <TextBlock Name="tblLastMonth" Text="Wykres wydatków z ostatniego miesiąca:" Margin="0,0,0,0" />
+                            <amq:SerialChart Margin="0,3,0,8"
+                                     x:Name="receiptMonthChart" 
+                                     CategoryValueMemberPath="ReceiptDate"
+                                     AxisForeground="{StaticResource PhoneForegroundBrush}"
+                                     GridStroke="DarkGray"
+                                     FontSize="21.333" 
+                                     LegendVisibility="Collapsed"
+                                     PlotAreaBackground="{x:Null}" 
+                                     Foreground="{StaticResource PhoneForegroundBrush}" Height="367" Width="420">
+                                <amq:SerialChart.Graphs>
+                                    <amq:LineGraph ValueMemberPath="ReceiptTrend" Title="Trend wydatków" Brush="{StaticResource PhoneContrastBackgroundBrush}" />
+                                    <amq:ColumnGraph  ValueMemberPath="ReceiptSum" 
+                                                      HorizontalAlignment="Left" 
+                                                      Title="Wydatki dnia" 
+                                                      Brush="{StaticResource PhoneAccentBrush}"
+                                                      />
+                                </amq:SerialChart.Graphs>
+                            </amq:SerialChart>
+                        </StackPanel>
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Width="432">
+                            <TextBlock x:Name="tblLastYear" Text="Wykres wydatków z ostatniego roku:" Margin="0,0,0,0" />
+                            <amq:SerialChart Margin="0,3,0,8"
+                                     x:Name="receiptYearChart" 
+                                     CategoryValueMemberPath="ReceiptDate"
+                                     AxisForeground="{StaticResource PhoneForegroundBrush}"
+                                     GridStroke="DarkGray"
+                                     FontSize="21.333" 
+                                     LegendVisibility="Collapsed"
+                                     PlotAreaBackground="{x:Null}"
+                                     Foreground="{StaticResource PhoneForegroundBrush}" 
+                                     Height="367" 
+                                     Width="420"
+                                             >
+                                     
+                                <amq:SerialChart.Graphs>
+                                    <amq:ColumnGraph  ValueMemberPath="ReceiptSum" Title="Wydatki miesiąca" 
+                                              Brush="{StaticResource PhoneAccentBrush}"/>
+                                </amq:SerialChart.Graphs>
+                            </amq:SerialChart>
+                        </StackPanel>
+                    </StackPanel>
+                </ScrollViewer>
+            </controls:PanoramaItem>
+    
+            <!--Panorama item three-->
+            <controls:PanoramaItem Header="wydatki">
+                <!--<ScrollViewer Grid.Row="1">-->
+                    <StackPanel Grid.Row="1">
+                        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Width="420">
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Right" Margin="0,0">
+                                <Button  VerticalAlignment="Top" Height="72" Width="72" Margin="0,0,0,0"  BorderBrush="{x:Null}" Click="ExpenseWeek_Click">
+                                    <Image Margin="-10" Source="{Binding Converter={StaticResource ThemedImageConverterHelper}, ConverterParameter={StaticResource PhoneBackgroundColor}}" DataContext="7Days.png" Height="42" Width="42" />
+                                </Button>
+                                <Button  VerticalAlignment="Top" Height="72" Width="72" Margin="0,0,0,0"  BorderBrush="{x:Null}" Click="ExpenseMonth_Click">
+                                    <Image Margin="-10" Source="{Binding Converter={StaticResource ThemedImageConverterHelper}, ConverterParameter={StaticResource PhoneBackgroundColor}}" DataContext="31Days.png" Height="42" Width="42" />
+                                </Button>
+                                <Button  VerticalAlignment="Top" Height="72" Width="72" Margin="0,0,0,0"  BorderBrush="{x:Null}" Click="ExpenseYear_Click">
+                                    <Image Margin="-10" Source="{Binding Converter={StaticResource ThemedImageConverterHelper}, ConverterParameter={StaticResource PhoneBackgroundColor}}" DataContext="365Days.png" Height="42" Width="42" />
+                                </Button>
+                             </StackPanel>
+                            <StackPanel Orientation="Vertical" Margin="0,-216,0,0" Width="348" HorizontalAlignment="Left" Height="Auto">
+                                <TextBlock x:Name="lbExpensesSum" Text="Suma wydatków " Margin="0,0,0,0" />
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                    <Image   Source="{Binding Converter={StaticResource ThemedImageConverterHelper}, ConverterParameter={StaticResource PhoneBackgroundColor}}" DataContext="moneyTransfer.png" Height="42" Width="42" Margin="0,4,4,0" />
+                                    <TextBlock x:Name="tbExplensesSum"  Margin="0,0,0,0" FontSize="48" Style="{StaticResource PhoneTextAccentStyle}"/>
+                                </StackPanel>
+                                <TextBlock  x:Name="lbExpensesAvg" Text="Średnia wydatków:" Margin="0,0,0,0" />
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Left">
+                                    <Image   Source="{Binding Converter={StaticResource ThemedImageConverterHelper}, ConverterParameter={StaticResource PhoneBackgroundColor}}" DataContext="stockIndexUp.png" Height="42" Width="42" Margin="0,4,4,0" />
+                                    <TextBlock x:Name="tbExpensesAvg"  Margin="0,0,0,0" FontSize="48" Style="{StaticResource PhoneTextAccentStyle}"/>
+                                </StackPanel>
+                                <TextBlock Text="Udział w wydatkach:" Margin="0,0,0,0" />
+                                <amq:PieChart x:Name="receiptShopsCategoryChart" 
+                                          TitleMemberPath="ReceiptCateroryName" 
+                                          ValueMemberPath="ReceiptCount" 
+                                          Width="348"
+                                          Height="220"
+                                          HorizontalAlignment="Center"
+                                          LegendVisibility="Visible">
+                                    <amq:PieChart.Brushes>
+                                        <SolidColorBrush Color="{StaticResource PhoneAccentColor}" />
+                                        <SolidColorBrush Color="{StaticResource PhoneAccentColor}" Opacity="0.8" />
+                                        <SolidColorBrush Color="{StaticResource PhoneAccentColor}" Opacity="0.6" />
+                                        <SolidColorBrush Color="{StaticResource PhoneAccentColor}" Opacity="0.4" />
+                                        <SolidColorBrush Color="{StaticResource PhoneAccentColor}" Opacity="0.2" />
+                                        <SolidColorBrush Color="{StaticResource PhoneAccentColor}" Opacity="0.0" />
+                                    </amq:PieChart.Brushes>
+                                    <amq:PieChart.Foreground>
+                                        <SolidColorBrush Color="{StaticResource PhoneForegroundColor}" />
+                                    </amq:PieChart.Foreground>
+                                </amq:PieChart>
+                            </StackPanel>
+                        </StackPanel>
+                  </StackPanel>
+                <!--</ScrollViewer>-->
+            </controls:PanoramaItem>
+            <!--Panorama item four-->
+            <!--<controls:PanoramaItem Header="info">
+                 <TextBlock Height="30" HorizontalAlignment="Left" Margin="0,0,0,0" Name="textBlock1" Text="Autor : Mateusz Nostitz-Jackowski " VerticalAlignment="Top" />
+            </controls:PanoramaItem>-->
+        </controls:Panorama>
+    </Grid>
+    <!--http://msdn.microsoft.com/en-us/library/hh394040%28v=vs.92%29.aspx-->
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton Click="Add_Click" IconUri="/Content/Images/light/add.png" Text="dodaj" />
+            <!--<shell:ApplicationBarIconButton Click="Delete_Click" IconUri="/Content/Images/delete.png" Text="usuń"/>-->
+            <!--<shell:ApplicationBarIconButton Click="Delete_Click" IconUri="/Content/Images/light/refresh.png" Text="synchronizuj"/>-->
+            <shell:ApplicationBarIconButton Click="Filter_Click" IconUri="/Content/Images/light/search.png" Text="szukaj"/>
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem  Click="Setting_Click"  Text="ustawienia SkyDrive"/>
+                <shell:ApplicationBarMenuItem  Click="About_Click"  Text="o programie"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+</phone:PhoneApplicationPage>

@@ -1,0 +1,315 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9754E6A8-FCA3-4DF2-9586-4AC1C4915ACC}</ProjectGuid>
+    <ProjectTypeGuids>{C089C8C0-30E0-4E22-80C0-CE093F111A43};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ReceiptStorage</RootNamespace>
+    <AssemblyName>ReceiptStorage</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <TargetFrameworkProfile>WindowsPhone71</TargetFrameworkProfile>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>ReceiptStorage.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>ReceiptStorage.App</SilverlightAppEntry>
+    <ValidateXaml>true</ValidateXaml>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\Release</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT;WINDOWS_PHONE</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Coding4Fun.Phone.Controls">
+      <HintPath>packages\Coding4Fun.Phone.Controls.Complete.1.5.6\lib\sl4-windowsphone71\Coding4Fun.Phone.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Coding4Fun.Phone.Controls.Toolkit">
+      <HintPath>packages\Coding4Fun.Phone.Controls.Complete.1.5.6\lib\sl4-windowsphone71\Coding4Fun.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Live, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Live.Controls, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone" />
+    <Reference Include="Microsoft.Phone.Controls" />
+    <Reference Include="Microsoft.Phone.Controls.Maps, Version=7.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Phone.Controls.Toolkit, Version=7.0.0.0, Culture=neutral, PublicKeyToken=b772ad94eb9ca604, processorArchitecture=MSIL">
+      <HintPath>packages\SilverlightToolkitWP.4.2011.12.14\lib\sl4-windowsphone71\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Phone.Interop" />
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>packages\Newtonsoft.Json.4.5.7\lib\sl4-windowsphone71\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp.WindowsPhone">
+      <HintPath>packages\RestSharp.103.1\lib\sl4-wp71\RestSharp.WindowsPhone.dll</HintPath>
+    </Reference>
+    <Reference Include="system.data.linq" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Xml" />
+    <Reference Include="mscorlib.extensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DataModel\Enums\CalendarType.cs" />
+    <Compile Include="DataModel\Enums\Country.cs" />
+    <Compile Include="DataModel\Enums\Currency.cs" />
+    <Compile Include="DataModel\Enums\OperationType.cs" />
+    <Compile Include="DataModel\Enums\ShopsCategory.cs" />
+    <Compile Include="DataModel\Enums\StatusEnum.cs" />
+    <Compile Include="DataModel\Simplified\PieChartsSimplified.cs" />
+    <Compile Include="DataModel\Simplified\ReceiptSimplified.cs" />
+    <Compile Include="Extensions\DateHelper.cs" />
+    <Compile Include="Extensions\EnumHelper.cs" />
+    <Compile Include="Extensions\ImageHelper.cs" />
+    <Compile Include="Extensions\MathHelper.cs" />
+    <Compile Include="Extensions\PlaceHelper.cs" />
+    <Compile Include="Extensions\ThemedImageConverterHelper.cs" />
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Dictionary.cs" />
+    <Compile Include="ExampleData\ExampleData.cs" />
+    <Compile Include="Model\Foto.cs" />
+    <Compile Include="Model\Receipt.cs" />
+    <Compile Include="Model\ReceiptStorageDataContext.cs" />
+    <Compile Include="Model\Shops.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserControls\ucDashboard.xaml.cs">
+      <DependentUpon>ucDashboard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities\SettingsApi.cs" />
+    <Compile Include="Utilities\SkyDrive.cs" />
+    <Compile Include="ViewModel\ReceiptStorageViewModel.cs" />
+    <Compile Include="View\About.xaml.cs">
+      <DependentUpon>About.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Add.xaml.cs">
+      <DependentUpon>Add.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\AddShop.xaml.cs">
+      <DependentUpon>AddShop.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Location.xaml.cs">
+      <DependentUpon>Location.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Preview.xaml.cs">
+      <DependentUpon>Preview.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\Settings.xaml.cs">
+      <DependentUpon>Settings.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControls\ucDashboard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\About.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AddShop.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Location.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Preview.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\Settings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram2.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Properties\WMAppManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="ApplicationIcon.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Background.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Content\Images\dark\add.png" />
+    <Content Include="Content\Images\dark\back.png" />
+    <Content Include="Content\Images\dark\basecircle.png" />
+    <Content Include="Content\Images\dark\camera.png" />
+    <Content Include="Content\Images\dark\cancel.png" />
+    <Content Include="Content\Images\dark\check.png" />
+    <Content Include="Content\Images\dark\delete.png" />
+    <Content Include="Content\Images\dark\download.png" />
+    <Content Include="Content\Images\dark\edit.png" />
+    <Content Include="Content\Images\dark\favs.addto.png" />
+    <Content Include="Content\Images\dark\favs.png" />
+    <Content Include="Content\Images\dark\ff.png" />
+    <Content Include="Content\Images\dark\flag.png" />
+    <Content Include="Content\Images\dark\folder.png" />
+    <Content Include="Content\Images\dark\heart.png" />
+    <Content Include="Content\Images\dark\i.png" />
+    <Content Include="Content\Images\dark\location.png" />
+    <Content Include="Content\Images\dark\locationPin.png" />
+    <Content Include="Content\Images\dark\mail.png" />
+    <Content Include="Content\Images\dark\minus.png" />
+    <Content Include="Content\Images\dark\moneyTransfer.png" />
+    <Content Include="Content\Images\dark\next.png" />
+    <Content Include="Content\Images\dark\overflowdots.png" />
+    <Content Include="Content\Images\dark\parent.png" />
+    <Content Include="Content\Images\dark\pause.png" />
+    <Content Include="Content\Images\dark\phone.png" />
+    <Content Include="Content\Images\dark\play.png" />
+    <Content Include="Content\Images\dark\questionmark.png" />
+    <Content Include="Content\Images\dark\refresh.png" />
+    <Content Include="Content\Images\dark\rew.png" />
+    <Content Include="Content\Images\dark\save.png" />
+    <Content Include="Content\Images\dark\search.png" />
+    <Content Include="Content\Images\dark\search_wc.png" />
+    <Content Include="Content\Images\dark\settings.png" />
+    <Content Include="Content\Images\dark\share.png" />
+    <Content Include="Content\Images\dark\stockIndexUp.png" />
+    <Content Include="Content\Images\dark\upload.png" />
+    <Content Include="Content\Images\dark\video.png" />
+    <Content Include="Content\Images\dark\add_wc.png" />
+    <Content Include="Content\Images\dark\31Days.png" />
+    <Content Include="Content\Images\dark\365Days.png" />
+    <Content Include="Content\Images\dark\7Days.png" />
+    <Content Include="Content\Images\light\31Days.png" />
+    <Content Include="Content\Images\light\365Days.png" />
+    <Content Include="Content\Images\light\7Days.png" />
+    <Content Include="Content\Images\light\add.png" />
+    <Content Include="Content\Images\light\add_wc.png" />
+    <Content Include="Content\Images\light\back.png" />
+    <Content Include="Content\Images\light\basecircle.png" />
+    <Content Include="Content\Images\light\camera.png" />
+    <Content Include="Content\Images\light\cancel.png" />
+    <Content Include="Content\Images\light\check.png" />
+    <Content Include="Content\Images\light\delete.png" />
+    <Content Include="Content\Images\light\download.png" />
+    <Content Include="Content\Images\light\edit.png" />
+    <Content Include="Content\Images\light\favs.addto.png" />
+    <Content Include="Content\Images\light\favs.png" />
+    <Content Include="Content\Images\light\ff.png" />
+    <Content Include="Content\Images\light\flag.png" />
+    <Content Include="Content\Images\light\folder.png" />
+    <Content Include="Content\Images\light\heart.png" />
+    <Content Include="Content\Images\light\i.png" />
+    <Content Include="Content\Images\light\location.png" />
+    <Content Include="Content\Images\light\locationmap.png" />
+    <Content Include="Content\Images\light\mail.png" />
+    <Content Include="Content\Images\light\minus.png" />
+    <Content Include="Content\Images\light\moneyTransfer.png" />
+    <Content Include="Content\Images\light\next.png" />
+    <Content Include="Content\Images\light\overflowdots.png" />
+    <Content Include="Content\Images\light\parent.png" />
+    <Content Include="Content\Images\light\pause.png" />
+    <Content Include="Content\Images\light\phone.png" />
+    <Content Include="Content\Images\light\play.png" />
+    <Content Include="Content\Images\light\questionmark.png" />
+    <Content Include="Content\Images\light\refresh.png" />
+    <Content Include="Content\Images\light\rew.png" />
+    <Content Include="Content\Images\light\save.png" />
+    <Content Include="Content\Images\light\search.png" />
+    <Content Include="Content\Images\light\settings.png" />
+    <Content Include="Content\Images\light\share.png" />
+    <Content Include="Content\Images\light\stockIndexUp.png" />
+    <Content Include="Content\Images\light\upload.png" />
+    <Content Include="Content\Images\light\video.png" />
+    <Content Include="ExampleData\Foto\mayaReceipt.jpg" />
+    <Content Include="ExampleData\Foto\RC_2012_12_14_10_37_00_353.jpg" />
+    <Content Include="ExampleData\Foto\WP_20120614.jpg" />
+    <Content Include="ExampleData\Foto\WP_20120614_1.jpg" />
+    <Content Include="ExampleData\Foto\WP_20120614_2.jpg" />
+    <Content Include="ExampleData\Foto\WP_20120614_3.jpg" />
+    <Content Include="ExampleData\Foto\WP_20120614_3_.jpg" />
+    <Content Include="ExampleData\Foto\WP_20120614_4.jpg" />
+    <Content Include="ExampleData\Foto\WP_20120614_5.jpg" />
+    <Content Include="ExampleData\Foto\WP_20120616.jpg" />
+    <Content Include="ExampleData\Foto\WP_20120616_1.jpg" />
+    <Content Include="SplashScreenImage.jpg" />
+    <Content Include="Toolkit.Content\ApplicationBar.Centerme.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Neighboorhood.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Cancel.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Check.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Delete.png" />
+    <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="ClientLibraryBase\ClientLibraryBase.csproj">
+      <Project>{AC93C88D-4A95-48CD-BA6E-146A03AFEA53}</Project>
+      <Name>ClientLibraryBase</Name>
+    </ProjectReference>
+    <ProjectReference Include="OcrClientLibrary\OcrClientLibrary.csproj">
+      <Project>{888AF97D-C3AD-4EC2-A010-89910B3B5AA3}</Project>
+      <Name>OcrClientLibrary</Name>
+    </ProjectReference>
+    <ProjectReference Include="QuickCharts\QuickChartsWP\QuickChartsWP.csproj">
+      <Project>{31FDBFD7-6F93-4D3C-8C1A-58D87E915EC5}</Project>
+      <Name>QuickChartsWP</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.$(TargetFrameworkProfile).Overrides.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\Silverlight for Phone\$(TargetFrameworkVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions />
+</Project>

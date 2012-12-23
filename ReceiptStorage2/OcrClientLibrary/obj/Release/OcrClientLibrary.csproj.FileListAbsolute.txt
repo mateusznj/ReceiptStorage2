@@ -1,0 +1,7 @@
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\OcrClientLibrary\Bin\Release\OcrClientLibrary.dll
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\OcrClientLibrary\Bin\Release\OcrClientLibrary.pdb
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\OcrClientLibrary\Bin\Release\ClientLibraryBase.dll
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\OcrClientLibrary\Bin\Release\ClientLibraryBase.pdb
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\OcrClientLibrary\obj\Release\ResolveAssemblyReference.cache
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\OcrClientLibrary\obj\Release\OcrClientLibrary.dll
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\OcrClientLibrary\obj\Release\OcrClientLibrary.pdb

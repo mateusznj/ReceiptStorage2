@@ -1,0 +1,12 @@
+D:\SkyDrive\WSB\PROJEKT\ReceiptStorage2\QuickCharts\QuickChartsWP\Bin\Debug\AmCharts.Windows.QuickCharts.WP.dll
+D:\SkyDrive\WSB\PROJEKT\ReceiptStorage2\QuickCharts\QuickChartsWP\Bin\Debug\AmCharts.Windows.QuickCharts.WP.pdb
+D:\SkyDrive\WSB\PROJEKT\ReceiptStorage2\QuickCharts\QuickChartsWP\obj\Debug\ResolveAssemblyReference.cache
+D:\SkyDrive\WSB\PROJEKT\ReceiptStorage2\QuickCharts\QuickChartsWP\obj\Debug\AmCharts.Windows.QuickCharts.WP.g.resources
+D:\SkyDrive\WSB\PROJEKT\ReceiptStorage2\QuickCharts\QuickChartsWP\obj\Debug\AmCharts.Windows.QuickCharts.WP.dll
+D:\SkyDrive\WSB\PROJEKT\ReceiptStorage2\QuickCharts\QuickChartsWP\obj\Debug\AmCharts.Windows.QuickCharts.WP.pdb
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\QuickCharts\QuickChartsWP\Bin\Debug\AmCharts.Windows.QuickCharts.WP.dll
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\QuickCharts\QuickChartsWP\Bin\Debug\AmCharts.Windows.QuickCharts.WP.pdb
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\QuickCharts\QuickChartsWP\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\QuickCharts\QuickChartsWP\obj\Debug\AmCharts.Windows.QuickCharts.WP.g.resources
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\QuickCharts\QuickChartsWP\obj\Debug\AmCharts.Windows.QuickCharts.WP.dll
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\QuickCharts\QuickChartsWP\obj\Debug\AmCharts.Windows.QuickCharts.WP.pdb

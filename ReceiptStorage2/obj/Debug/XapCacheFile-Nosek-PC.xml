@@ -1,0 +1,12 @@
+﻿<xapCache source="C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\Bin\Debug\ReceiptStorage2.xap" wasSigned="False" certificateThumbprint="" TimeStampUrl="" lastWriteTime="2012-05-11 18:56:24">
+  <file source="C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\Bin\Debug\WMAppManifest.xml" archivePath="WMAppManifest.xml" lastWriteTime="2012-04-27 09:08:50" />
+  <file source="C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\Background.png" archivePath="Background.png" lastWriteTime="2012-04-27 09:08:45" />
+  <file source="C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\ApplicationIcon.png" archivePath="ApplicationIcon.png" lastWriteTime="2012-04-27 09:08:45" />
+  <file source="C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\obj\Debug\ReceiptStorage2.dll" archivePath="ReceiptStorage2.dll" lastWriteTime="2012-05-11 18:56:23" />
+  <file source="C:\Program Files (x86)\Microsoft SDKs\Windows Phone\v7.1\Libraries\Silverlight\Microsoft.Phone.Controls.dll" archivePath="Microsoft.Phone.Controls.dll" lastWriteTime="2011-09-15 15:36:26" />
+  <file source="C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\Content\Images\add.png" archivePath="Content\Images\add.png" lastWriteTime="2012-05-11 10:19:04" />
+  <file source="C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\Content\Images\delete.png" archivePath="Content\Images\delete.png" lastWriteTime="2012-05-11 10:19:16" />
+  <file source="C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\Content\Images\refresh.png" archivePath="Content\Images\refresh.png" lastWriteTime="2012-05-11 17:52:28" />
+  <file source="C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\SplashScreenImage.jpg" archivePath="SplashScreenImage.jpg" lastWriteTime="2012-04-27 09:08:45" />
+  <file source="C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\Bin\Debug\AppManifest.xaml" archivePath="AppManifest.xaml" lastWriteTime="2012-05-11 10:25:22" />
+</xapCache>

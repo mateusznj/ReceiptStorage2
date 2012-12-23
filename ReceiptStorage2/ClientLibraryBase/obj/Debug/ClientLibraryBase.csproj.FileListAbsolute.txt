@@ -1,0 +1,18 @@
+C:\Users\mateusz.nostitz-jack\Documents\Microsoft Research\Cloud Services SDK for WP7\1.0.8\Clients\ClientLibraryBase\Bin\Debug\ClientLibraryBase.XML
+C:\Users\mateusz.nostitz-jack\Documents\Microsoft Research\Cloud Services SDK for WP7\1.0.8\Clients\ClientLibraryBase\Bin\Debug\ClientLibraryBase.dll
+C:\Users\mateusz.nostitz-jack\Documents\Microsoft Research\Cloud Services SDK for WP7\1.0.8\Clients\ClientLibraryBase\Bin\Debug\ClientLibraryBase.pdb
+C:\Users\mateusz.nostitz-jack\Documents\Microsoft Research\Cloud Services SDK for WP7\1.0.8\Clients\ClientLibraryBase\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mateusz.nostitz-jack\Documents\Microsoft Research\Cloud Services SDK for WP7\1.0.8\Clients\ClientLibraryBase\obj\Debug\ClientLibraryBase.dll
+C:\Users\mateusz.nostitz-jack\Documents\Microsoft Research\Cloud Services SDK for WP7\1.0.8\Clients\ClientLibraryBase\obj\Debug\ClientLibraryBase.pdb
+D:\SkyDrive\WSB\PROJEKT\ReceiptStorage2\ClientLibraryBase\Bin\Debug\ClientLibraryBase.XML
+D:\SkyDrive\WSB\PROJEKT\ReceiptStorage2\ClientLibraryBase\Bin\Debug\ClientLibraryBase.dll
+D:\SkyDrive\WSB\PROJEKT\ReceiptStorage2\ClientLibraryBase\Bin\Debug\ClientLibraryBase.pdb
+D:\SkyDrive\WSB\PROJEKT\ReceiptStorage2\ClientLibraryBase\obj\Debug\ResolveAssemblyReference.cache
+D:\SkyDrive\WSB\PROJEKT\ReceiptStorage2\ClientLibraryBase\obj\Debug\ClientLibraryBase.dll
+D:\SkyDrive\WSB\PROJEKT\ReceiptStorage2\ClientLibraryBase\obj\Debug\ClientLibraryBase.pdb
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\ClientLibraryBase\Bin\Debug\ClientLibraryBase.XML
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\ClientLibraryBase\Bin\Debug\ClientLibraryBase.dll
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\ClientLibraryBase\Bin\Debug\ClientLibraryBase.pdb
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\ClientLibraryBase\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\ClientLibraryBase\obj\Debug\ClientLibraryBase.dll
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\ClientLibraryBase\obj\Debug\ClientLibraryBase.pdb

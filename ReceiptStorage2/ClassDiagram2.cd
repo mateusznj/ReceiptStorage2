@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ReceiptStorage.Model.Foto" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="0.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAIAIACAIIQAQAAAAAABgAgAAACAAAAEAIAAAQA=</HashCode>
+      <FileName>Model\Foto.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ReceiptData" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ReceiptStorage.Model.Receipt" BaseTypeListCollapsed="true">
+    <Position X="1.5" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ZAAIACAAAAgIJYAgAAAgAEABiAREAASAAEAAAIAgAQQ=</HashCode>
+      <FileName>Model\Receipt.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ShopsId" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="ReceiptFoto" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ReceiptStorage.Model.Dictionary" BaseTypeListCollapsed="true">
+    <Position X="8.75" Y="0.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAQAAMIIAgAACAAAABgAAAAAAAAAAACAAAAQA=</HashCode>
+      <FileName>Model\Dictionary.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ReceiptStorage.Model.Shops" BaseTypeListCollapsed="true">
+    <Position X="4.75" Y="5.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAABCIaAAQABAACABgAAEIkAAAAAAAABCAQA=</HashCode>
+      <FileName>Model\Shops.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

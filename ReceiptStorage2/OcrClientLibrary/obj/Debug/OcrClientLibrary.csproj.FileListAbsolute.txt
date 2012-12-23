@@ -1,0 +1,27 @@
+C:\Users\mateusz.nostitz-jack\Documents\Microsoft Research\Cloud Services SDK for WP7\1.0.8\Clients\OcrClientLibrary\Bin\Debug\OcrClientLibrary.XML
+C:\Users\mateusz.nostitz-jack\Documents\Microsoft Research\Cloud Services SDK for WP7\1.0.8\Clients\OcrClientLibrary\Bin\Debug\OcrClientLibrary.dll
+C:\Users\mateusz.nostitz-jack\Documents\Microsoft Research\Cloud Services SDK for WP7\1.0.8\Clients\OcrClientLibrary\Bin\Debug\OcrClientLibrary.pdb
+C:\Users\mateusz.nostitz-jack\Documents\Microsoft Research\Cloud Services SDK for WP7\1.0.8\Clients\OcrClientLibrary\Bin\Debug\ClientLibraryBase.dll
+C:\Users\mateusz.nostitz-jack\Documents\Microsoft Research\Cloud Services SDK for WP7\1.0.8\Clients\OcrClientLibrary\Bin\Debug\ClientLibraryBase.pdb
+C:\Users\mateusz.nostitz-jack\Documents\Microsoft Research\Cloud Services SDK for WP7\1.0.8\Clients\OcrClientLibrary\Bin\Debug\ClientLibraryBase.xml
+C:\Users\mateusz.nostitz-jack\Documents\Microsoft Research\Cloud Services SDK for WP7\1.0.8\Clients\OcrClientLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mateusz.nostitz-jack\Documents\Microsoft Research\Cloud Services SDK for WP7\1.0.8\Clients\OcrClientLibrary\obj\Debug\OcrClientLibrary.dll
+C:\Users\mateusz.nostitz-jack\Documents\Microsoft Research\Cloud Services SDK for WP7\1.0.8\Clients\OcrClientLibrary\obj\Debug\OcrClientLibrary.pdb
+D:\SkyDrive\WSB\PROJEKT\ReceiptStorage2\OcrClientLibrary\Bin\Debug\OcrClientLibrary.XML
+D:\SkyDrive\WSB\PROJEKT\ReceiptStorage2\OcrClientLibrary\Bin\Debug\OcrClientLibrary.dll
+D:\SkyDrive\WSB\PROJEKT\ReceiptStorage2\OcrClientLibrary\Bin\Debug\OcrClientLibrary.pdb
+D:\SkyDrive\WSB\PROJEKT\ReceiptStorage2\OcrClientLibrary\Bin\Debug\ClientLibraryBase.dll
+D:\SkyDrive\WSB\PROJEKT\ReceiptStorage2\OcrClientLibrary\Bin\Debug\ClientLibraryBase.pdb
+D:\SkyDrive\WSB\PROJEKT\ReceiptStorage2\OcrClientLibrary\Bin\Debug\ClientLibraryBase.xml
+D:\SkyDrive\WSB\PROJEKT\ReceiptStorage2\OcrClientLibrary\obj\Debug\ResolveAssemblyReference.cache
+D:\SkyDrive\WSB\PROJEKT\ReceiptStorage2\OcrClientLibrary\obj\Debug\OcrClientLibrary.dll
+D:\SkyDrive\WSB\PROJEKT\ReceiptStorage2\OcrClientLibrary\obj\Debug\OcrClientLibrary.pdb
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\OcrClientLibrary\Bin\Debug\OcrClientLibrary.XML
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\OcrClientLibrary\Bin\Debug\OcrClientLibrary.dll
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\OcrClientLibrary\Bin\Debug\OcrClientLibrary.pdb
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\OcrClientLibrary\Bin\Debug\ClientLibraryBase.dll
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\OcrClientLibrary\Bin\Debug\ClientLibraryBase.pdb
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\OcrClientLibrary\Bin\Debug\ClientLibraryBase.xml
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\OcrClientLibrary\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\OcrClientLibrary\obj\Debug\OcrClientLibrary.dll
+C:\Users\mateusz.nostitz-jack\Desktop\SkyDrive\WSB\PROJEKT\ReceiptStorage2\OcrClientLibrary\obj\Debug\OcrClientLibrary.pdb

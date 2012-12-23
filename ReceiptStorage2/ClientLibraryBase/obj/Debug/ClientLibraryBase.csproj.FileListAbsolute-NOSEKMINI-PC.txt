@@ -1,0 +1,6 @@
+C:\Users\mateusz.nostitz-jack\Documents\Microsoft Research\Cloud Services SDK for WP7\1.0.8\Clients\ClientLibraryBase\Bin\Debug\ClientLibraryBase.XML
+C:\Users\mateusz.nostitz-jack\Documents\Microsoft Research\Cloud Services SDK for WP7\1.0.8\Clients\ClientLibraryBase\Bin\Debug\ClientLibraryBase.dll
+C:\Users\mateusz.nostitz-jack\Documents\Microsoft Research\Cloud Services SDK for WP7\1.0.8\Clients\ClientLibraryBase\Bin\Debug\ClientLibraryBase.pdb
+C:\Users\mateusz.nostitz-jack\Documents\Microsoft Research\Cloud Services SDK for WP7\1.0.8\Clients\ClientLibraryBase\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\mateusz.nostitz-jack\Documents\Microsoft Research\Cloud Services SDK for WP7\1.0.8\Clients\ClientLibraryBase\obj\Debug\ClientLibraryBase.dll
+C:\Users\mateusz.nostitz-jack\Documents\Microsoft Research\Cloud Services SDK for WP7\1.0.8\Clients\ClientLibraryBase\obj\Debug\ClientLibraryBase.pdb
